@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- start button -->
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+
+
+    <!-- info-box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules of this quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>15 seconds </span>per question.</div>
+            <div class="info">2. Once you select your answer you can't change it.</div>
+            <div class="info">3. You can't select multiple answers.</div>
+            <div class="info">4. You can't exit from the quiz untill you get the result.</div>
+            <div class="info">5. You will get points on the basis of the correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- quiz -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Let's Play this amazing Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="time_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>What does HTML stands for?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                    <div class="icon tick"><i class="fa fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                    <div class="icon cross"><i class="fa fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                </div> -->
+            </div>
+        </section>
+        <!-- quiz footer -->
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fa fa-trophy"></i>
+        </div>
+        <div class="complete_text">You've completed the quiz!</div>
+        <div class="score_text">
+            <!-- <span>and sorry, You got only <p>2</p>out of<p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="quit" id="quit_quiz">Quit</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/question.js"></script>
+   
+</body>
+</html>
